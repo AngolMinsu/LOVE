@@ -8,17 +8,17 @@ def generate_random_uppercase():
     return random.choice(string.ascii_uppercase)
 
 def main():
-    LOVE = []
+    MIKADO = []
     while True:
         char = generate_random_uppercase()
         print(char, end=" ")
-        LOVE.append(char)
+        MIKADO.append(char)
         
-        if len(LOVE) > 4:
-            LOVE.pop(0)
+        if len(MIKADO) > 6:
+            MIKADO.pop(0)
         
-        if ''.join(LOVE[-4:]) == "LOVE":
-            print("\b"*8 + RED + "L O V E" + RESET)
+        if ''.join(MIKADO[-6:]) == "MIKADO":
+            print("\b"*12 + RED + "M I K A D O" + RESET)
             break
 
 if __name__ == "__main__":
